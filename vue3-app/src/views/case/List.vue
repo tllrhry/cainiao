@@ -5,7 +5,7 @@
       <div class="page-header-content">
         <h1 class="page-title">案例展示</h1>
         <p class="page-subtitle">
-          品牌视觉 · 文化空间 · 主题文旅 · 商业空间 · 数字视觉 · 雕塑小品 · 活动美陈 · 广告设计
+          图文广告 · 文化建设 · 标识标牌 · 活动展陈 · 品牌全案 · 包装 · 电商/新媒体 · 视频
         </p>
       </div>
     </section>

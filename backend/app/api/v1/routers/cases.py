@@ -46,7 +46,7 @@ router = APIRouter(prefix="/cases", tags=["案例管理"])
 def list_cases(
     page: int = Query(1, ge=1, description="页码"),
     page_size: int = Query(12, ge=1, le=50, description="每页条数"),
-    category: Optional[str] = Query(None, description="分类筛选：品牌视觉 / 文化空间 / 主题文旅 / 商业空间 / 数字视觉 / 雕塑小品 / 活动美陈 / 广告设计"),
+    category: Optional[str] = Query(None, description="分类筛选：图文广告类 / 文化建设 / 标识标牌 / 活动展陈 / 品牌全案 / 包装 / 电商新媒体 / 视频"),
     db: Session = Depends(get_db),
 ):
     """前台案例列表"""

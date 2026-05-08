@@ -1,6 +1,6 @@
 """
 案例模型
-- cases: 案例主表，分类为：品牌视觉/文化空间/主题文旅/商业空间/数字视觉/雕塑小品/活动美陈/广告设计
+- cases: 案例主表，分类为：图文广告类/文化建设/标识标牌/活动展陈/品牌全案/包装/电商新媒体/视频
 - case_images: 案例多图关联表
 """
 
@@ -36,7 +36,7 @@ class Case(Base):
         String(50),
         nullable=False,
         index=True,
-        comment="案例分类：品牌视觉/文化空间/主题文旅/商业空间/数字视觉/雕塑小品/活动美陈/广告设计",
+        comment="案例分类：图文广告类/文化建设/标识标牌/活动展陈/品牌全案/包装/电商新媒体/视频",
     )
     cover_image = Column(String(500), nullable=True, comment="封面图片URL")
     status = Column(

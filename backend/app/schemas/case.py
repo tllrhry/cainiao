@@ -38,7 +38,7 @@ class CaseBase(BaseModel):
     title: str = Field(..., min_length=1, max_length=200, description="案例标题")
     description: Optional[str] = Field(None, description="案例描述")
     category: str = Field(
-        ..., max_length=50, description="案例分类：品牌视觉 / 文化空间 / 主题文旅 / 商业空间 / 数字视觉 / 雕塑小品 / 活动美陈 / 广告设计"
+        ..., max_length=50, description="案例分类：图文广告类 / 文化建设 / 标识标牌 / 活动展陈 / 品牌全案 / 包装 / 电商新媒体 / 视频"
     )
     cover_image: Optional[str] = Field(None, max_length=500, description="封面图片 URL")
     status: CaseStatus = Field(CaseStatus.DRAFT, description="状态：draft / published")

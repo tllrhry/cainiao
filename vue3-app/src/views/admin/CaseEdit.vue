@@ -175,7 +175,7 @@ const loading = ref(isEdit)
 const submitting = ref(false)
 const uploadingCover = ref(false)
 
-const CATEGORIES = ['品牌视觉', '文化空间', '主题文旅', '商业空间', '数字视觉', '雕塑小品', '活动美陈', '广告设计']
+const CATEGORIES = ['图文广告类', '文化建设', '标识标牌', '活动展陈', '品牌全案', '包装', '电商/新媒体', '视频']
 
 // ==================== 表单 ====================
 const form = reactive<CaseForm>({
