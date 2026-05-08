@@ -44,6 +44,7 @@ class Article(Base):
     author_id = Column(
         Integer, ForeignKey("users.id", ondelete="SET NULL"), nullable=True, comment="作者ID"
     )
+    view_count = Column(Integer, default=0, nullable=False, comment="阅读量")
     published_at = Column(DateTime, nullable=True, comment="发布时间")
     created_at = Column(DateTime, server_default=func.now(), comment="创建时间")
     updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now(), comment="更新时间")

@@ -1,8 +1,47 @@
+# Dependencies
 node_modules/
-.gitnexus/
-*.pyc
 __pycache__/
+*.pyc
+*.pyo
+
+# Environment & secrets
 .env
 .workbuddy/
+.env.*
+
+# Build output
 dist/
 .vite/
+
+# Python venv
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
+Desktop.ini
+nul
+
+# Logs
+*.log
+
+# Nginx installed binaries (large, not needed in repo)
+nginx-install/
+
+# GitNexus (separate project)
+.gitnexus/
+GitNexus/
+
+# Podman data
+cainiaopod/
+
+# Temp files
+*.tmp
+*.bak

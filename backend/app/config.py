@@ -36,7 +36,7 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24  # 24 小时
 
     # 文件上传
-    UPLOAD_DIR: str = "uploads"
+    UPLOAD_DIR: str = "static/uploads"
     MAX_UPLOAD_SIZE: int = 10 * 1024 * 1024  # 10MB
 
     # 前端地址（CORS 用）

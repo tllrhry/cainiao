@@ -1,6 +1,6 @@
 """
 案例模型
-- cases: 案例主表，分类为：文化墙/展厅/主题公园/雕塑/小品
+- cases: 案例主表，分类为：品牌视觉/文化空间/主题文旅/商业空间/数字视觉/雕塑小品/活动美陈/广告设计
 - case_images: 案例多图关联表
 """
 
@@ -36,7 +36,7 @@ class Case(Base):
         String(50),
         nullable=False,
         index=True,
-        comment="案例分类：文化墙/展厅/主题公园/雕塑/小品",
+        comment="案例分类：品牌视觉/文化空间/主题文旅/商业空间/数字视觉/雕塑小品/活动美陈/广告设计",
     )
     cover_image = Column(String(500), nullable=True, comment="封面图片URL")
     status = Column(

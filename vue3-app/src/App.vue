@@ -1,21 +1,7 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div class="app">
-    <h1>Vue 3 + Vite</h1>
-    <HelloWorld msg="Vue 3 安装成功!" />
-  </div>
+  <router-view />
 </template>
 
-<style>
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-.app {
-  text-align: center;
-  padding: 2rem;
-}
-</style>
+<script setup lang="ts">
+// 根组件：仅放置路由出口，具体布局由各路由自行决定
+</script>

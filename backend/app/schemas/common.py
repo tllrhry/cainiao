@@ -38,4 +38,5 @@ class PaginationMeta(BaseModel):
 class PaginatedResponse(BaseResponse[T], Generic[T]):
     """分页响应 —— data 为列表，meta 携带分页信息"""
 
+    data: Optional[list[T]] = None  # 覆盖父类：分页接口 data 为列表
     meta: Optional[PaginationMeta] = None

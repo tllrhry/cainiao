@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局基础样式 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-gray-800 bg-gray-50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+/* 图片懒加载过渡 */
+img {
+  @apply transition-opacity duration-300;
+}
+img[lazy="loading"] {
+  @apply opacity-0;
+}
+img[lazy="loaded"] {
+  @apply opacity-100;
+}
