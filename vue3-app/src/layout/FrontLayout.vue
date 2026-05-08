@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
-          <router-link to="/" class="flex items-center gap-3">
+          <router-link to="/" class="flex items-center gap-3" style="text-decoration:none">
             <img src="/logo.jpg" alt="菜鸟设计" class="h-10 w-auto" />
             <span class="logo-text">菜鸟广告设计</span>
           </router-link>
@@ -195,6 +195,7 @@ function isActive(path: string) {
   color: #1f2937;
   letter-spacing: 1px;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .main-nav {
@@ -259,7 +260,7 @@ function isActive(path: string) {
 }
 
 .footer-main {
-  padding: 64px 0 48px;
+  padding: 40px 0 28px;
 }
 
 .footer-container {
@@ -269,10 +270,10 @@ function isActive(path: string) {
 }
 
 .footer-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -281,17 +282,17 @@ function isActive(path: string) {
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr auto;
-  gap: 40px;
+  gap: 24px;
   align-items: stretch;
 }
 
 /* ==================== 左侧位置卡片 ==================== */
 .location-card {
   position: relative;
-  border-radius: 16px;
+  border-radius: 14px;
   overflow: hidden;
   background: linear-gradient(135deg, #1e3a5f 0%, #2d5f8a 100%);
-  min-height: 320px;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,25 +314,25 @@ function isActive(path: string) {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 32px;
+  padding: 20px;
 }
 
 .pin-wrap {
-  width: 72px;
-  height: 72px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: rgba(64, 158, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 12px;
   position: relative;
 }
 
 .pin-wrap::before {
   content: '';
   position: absolute;
-  inset: -8px;
+  inset: -6px;
   border-radius: 50%;
   border: 2px solid rgba(64, 158, 255, 0.2);
   animation: pin-ring 2s ease-out infinite;
@@ -343,29 +344,29 @@ function isActive(path: string) {
 }
 
 .pin-icon {
-  width: 36px;
-  height: 36px;
+  width: 26px;
+  height: 26px;
   color: #409eff;
 }
 
 .location-address {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: #fff;
-  line-height: 1.7;
-  margin: 0 0 20px;
+  line-height: 1.6;
+  margin: 0 0 12px;
   font-weight: 500;
 }
 
 .map-link {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 10px 20px;
+  gap: 5px;
+  padding: 7px 14px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 999px;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   text-decoration: none;
   transition: all 0.25s ease;
   backdrop-filter: blur(4px);
@@ -378,25 +379,25 @@ function isActive(path: string) {
 }
 
 .map-link svg {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
 }
 
-/* ==================== 右侧信息列表 ==================== */
+/* ==================== 中间信息列表 ==================== */
 .info-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
   justify-content: center;
 }
 
 .info-item {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  padding: 16px 20px;
+  gap: 10px;
+  padding: 10px 14px;
   background: rgba(255, 255, 255, 0.04);
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.06);
   transition: all 0.25s ease;
 }
@@ -408,9 +409,9 @@ function isActive(path: string) {
 }
 
 .info-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
   background: rgba(64, 158, 255, 0.12);
   display: flex;
   align-items: center;
@@ -420,26 +421,26 @@ function isActive(path: string) {
 }
 
 .info-icon svg {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
 }
 
 .info-body {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding-top: 2px;
+  gap: 2px;
+  padding-top: 1px;
 }
 
 .info-label {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   color: #94a3b8;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .info-value {
-  font-size: 1rem;
+  font-size: 0.88rem;
   color: #f1f5f9;
   font-weight: 500;
 }
@@ -459,29 +460,29 @@ function isActive(path: string) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px 20px;
+  padding: 16px;
   background: rgba(255, 255, 255, 0.04);
-  border-radius: 16px;
+  border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .qrcode-title {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #fff;
-  margin: 0 0 4px;
+  margin: 0 0 2px;
 }
 
 .qrcode-hint {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: #94a3b8;
-  margin: 0 0 16px;
+  margin: 0 0 10px;
 }
 
 .qrcode-img {
-  width: 140px;
-  height: 140px;
-  border-radius: 12px;
+  width: 110px;
+  height: 110px;
+  border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   background: #fff;
   object-fit: contain;
@@ -490,12 +491,12 @@ function isActive(path: string) {
 /* ==================== 版权栏 ==================== */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding: 24px 0;
+  padding: 16px 0;
 }
 
 .copyright {
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #64748b;
   margin: 0;
 }
@@ -511,39 +512,40 @@ function isActive(path: string) {
 @media (max-width: 1024px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 20px;
   }
 
   .qrcode-card {
     grid-column: 1 / -1;
     flex-direction: row;
-    gap: 16px;
-    padding: 20px 24px;
+    gap: 12px;
+    padding: 14px 20px;
   }
 
   .qrcode-img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     order: -1;
   }
 
   .location-card {
-    min-height: 260px;
+    min-height: 180px;
   }
 
   .footer-title {
-    font-size: 1.6rem;
-    margin-bottom: 32px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 640px) {
   .footer-main {
-    padding: 48px 0 32px;
+    padding: 28px 0 20px;
   }
 
   .footer-title {
-    font-size: 1.4rem;
+    font-size: 1.15rem;
+    margin-bottom: 16px;
   }
 
   .footer-grid {
@@ -555,36 +557,36 @@ function isActive(path: string) {
   }
 
   .qrcode-img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     order: 0;
   }
 
   .location-card {
-    min-height: 220px;
+    min-height: 160px;
   }
 
   .location-address {
-    font-size: 1rem;
+    font-size: 0.88rem;
   }
 
   .info-item {
-    padding: 12px 16px;
-    gap: 12px;
+    padding: 8px 12px;
+    gap: 10px;
   }
 
   .info-icon {
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
   }
 
   .info-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 
   .info-value {
-    font-size: 0.95rem;
+    font-size: 0.84rem;
   }
 }
 </style>
