@@ -5,8 +5,9 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
-          <router-link to="/" class="flex items-center gap-2">
+          <router-link to="/" class="flex items-center gap-3">
             <img src="/logo.jpg" alt="菜鸟设计" class="h-10 w-auto" />
+            <span class="logo-text">菜鸟广告设计</span>
           </router-link>
 
           <!-- 导航链接 -->
@@ -82,7 +83,7 @@
               </div>
             </div>
 
-            <!-- 右侧：公司信息 -->
+            <!-- 中间：公司信息 -->
             <div class="info-list">
               <div class="info-item">
                 <div class="info-icon">
@@ -143,6 +144,13 @@
                 </div>
               </div>
             </div>
+
+            <!-- 右侧：企业微信二维码 -->
+            <div class="qrcode-card">
+              <p class="qrcode-title">企业微信</p>
+              <p class="qrcode-hint">扫码添加好友</p>
+              <img src="/qiyeweixin.png" alt="企业微信二维码" class="qrcode-img" />
+            </div>
           </div>
         </div>
       </div>
@@ -181,6 +189,14 @@ function isActive(path: string) {
 
 <style scoped>
 /* ==================== 顶部导航 ==================== */
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
 .main-nav {
   display: none;
   align-items: center;
@@ -261,10 +277,10 @@ function isActive(path: string) {
   letter-spacing: 2px;
 }
 
-/* ==================== 双栏网格 ==================== */
+/* ==================== 三栏网格 ==================== */
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr auto;
   gap: 40px;
   align-items: stretch;
 }
@@ -437,6 +453,40 @@ function isActive(path: string) {
   color: #409eff;
 }
 
+/* ==================== 右侧企业微信二维码 ==================== */
+.qrcode-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.qrcode-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 4px;
+}
+
+.qrcode-hint {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin: 0 0 16px;
+}
+
+.qrcode-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: #fff;
+  object-fit: contain;
+}
+
 /* ==================== 版权栏 ==================== */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -451,10 +501,30 @@ function isActive(path: string) {
 }
 
 /* ==================== 响应式 ==================== */
+@media (max-width: 640px) {
+  .logo-text {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+}
+
 @media (max-width: 1024px) {
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 32px;
+  }
+
+  .qrcode-card {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    gap: 16px;
+    padding: 20px 24px;
+  }
+
+  .qrcode-img {
+    width: 100px;
+    height: 100px;
+    order: -1;
   }
 
   .location-card {
@@ -474,6 +544,20 @@ function isActive(path: string) {
 
   .footer-title {
     font-size: 1.4rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qrcode-card {
+    flex-direction: column;
+  }
+
+  .qrcode-img {
+    width: 120px;
+    height: 120px;
+    order: 0;
   }
 
   .location-card {

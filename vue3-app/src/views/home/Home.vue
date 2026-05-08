@@ -104,7 +104,7 @@
     <section class="services-section" id="services">
       <div class="section-container">
         <h2 class="section-title">服务项目</h2>
-        <p class="section-subtitle">八大核心业务板块，全方位满足空间设计需求</p>
+        <p class="section-subtitle">八大核心业务板块，一站式广告设计服务</p>
         <div class="services-grid">
           <div
             v-for="svc in services"
@@ -154,7 +154,7 @@
     <section class="cta-section" id="contact">
       <div class="section-container">
         <h2 class="cta-title">开启您的空间设计之旅</h2>
-        <p class="cta-subtitle">品牌视觉 · 文化空间 · 主题文旅 · 商业空间 · 数字视觉 · 雕塑小品 · 活动美陈 · 广告设计</p>
+        <p class="cta-subtitle">图文广告 · 文化建设 · 标识标牌 · 活动展陈 · 品牌全案 · 包装 · 电商 · 视频</p>
         <div class="cta-actions">
           <el-button type="primary" size="large" round @click="$router.push('/cases')">
             查看案例
@@ -206,14 +206,14 @@ const iconMap: Record<string, any> = {
 
 /** 服务项目数据 */
 const services = [
-  { icon: '🎨', title: '品牌视觉', desc: '品牌形象设计、VI 系统、企业画册，用视觉语言讲述品牌故事' },
-  { icon: '🏛️', title: '文化空间', desc: '文化墙、文化连廊、党建展厅，让空间承载文化与精神' },
-  { icon: '🎢', title: '主题文旅', desc: '主题公园、文旅景区规划，打造沉浸式体验目的地' },
-  { icon: '🏬', title: '商业空间', desc: '商业美陈、店铺空间、商业街区规划，赋能商业价值' },
-  { icon: '💻', title: '数字视觉', desc: '数字展厅、多媒体交互、3D 可视化，科技与艺术的融合' },
-  { icon: '🗿', title: '雕塑小品', desc: '景观雕塑、艺术装置、公共艺术品，为空间注入灵魂' },
-  { icon: '🎪', title: '活动美陈', desc: '节庆美陈、活动布置、快闪空间，营造场景氛围' },
-  { icon: '📐', title: '广告设计', desc: '海报设计、宣传物料、户外广告，精准传达品牌信息' },
+  { icon: '🖼️', title: '图文广告', desc: '海报、门头、画册、宣传单等全套宣传物料设计' },
+  { icon: '🏛️', title: '文化建设', desc: '文化墙、展厅展馆、政企校园医院文化空间、全案设计' },
+  { icon: '🪧', title: '标识标牌', desc: '导视系统、精神堡垒、各类标识牌定制设计' },
+  { icon: '🎪', title: '活动展陈', desc: '活动美陈、场景布置、展会陈列创意设计' },
+  { icon: '✨', title: '品牌全案', desc: 'LOGO、VI 视觉、品牌整体形象策划设计' },
+  { icon: '🎁', title: '包装', desc: '产品礼盒、外包装、文创包装创意定制' },
+  { icon: '🛒', title: '电商', desc: '店铺装修、首页详情页、电商视觉美工设计，新媒体，小红书/抖音封面' },
+  { icon: '🎬', title: '视频', desc: '文/图生视频，数字人，AI 剪辑，声音克隆，短视频剪辑、数字广告视觉创作' },
 ]
 
 /** 多张轮播图时启用循环 */
