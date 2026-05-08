@@ -309,18 +309,18 @@ onMounted(() => {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #1f2937;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .section-subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #6b7280;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 /* ==================== 轮播图区域 ==================== */
@@ -448,23 +448,23 @@ onMounted(() => {
 
 /* ==================== 服务项目区 ==================== */
 .services-section {
-  padding: 80px 0;
+  padding: 60px 0;
   background: #fff;
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 48px;
+  gap: 20px;
+  margin-top: 36px;
 }
 
 /* 8 个卡片正好 4×2，无需居中 */
 
 .service-card {
   background: #f9fafb;
-  border-radius: 16px;
-  padding: 32px 24px;
+  border-radius: 14px;
+  padding: 28px 20px;
   text-align: center;
   border: 1px solid #f3f4f6;
   transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
@@ -477,38 +477,38 @@ onMounted(() => {
 }
 
 .service-icon {
-  font-size: 2.5rem;
-  margin-bottom: 16px;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
   line-height: 1;
 }
 
 .service-title {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: #1f2937;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .service-desc {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: #6b7280;
   line-height: 1.6;
 }
 
 /* ==================== 公司简介区 ==================== */
 .about-section {
-  padding: 80px 0;
-  background: #fff;
+  padding: 60px 0;
+  background: #f8fafc;
 }
 
 .about-text {
   max-width: 1000px;
   margin: 0 auto;
-  font-size: 1.08rem;
+  font-size: 1rem;
   line-height: 2;
   color: #374151;
   columns: 2;
-  column-gap: 48px;
+  column-gap: 40px;
 }
 
 .about-text p {
@@ -517,21 +517,21 @@ onMounted(() => {
 
 /* ==================== 核心优势区 ==================== */
 .values-section {
-  padding: 80px 0;
+  padding: 60px 0;
   background: #f9fafb;
 }
 
 .values-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 48px;
+  gap: 20px;
+  margin-top: 36px;
 }
 
 .value-card {
   background: #fff;
-  border-radius: 16px;
-  padding: 36px 24px;
+  border-radius: 14px;
+  padding: 28px 20px;
   text-align: center;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -544,54 +544,54 @@ onMounted(() => {
 
 .value-card-skeleton {
   background: #fff;
-  border-radius: 16px;
-  padding: 36px 24px;
+  border-radius: 14px;
+  padding: 28px 20px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .value-icon {
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background: linear-gradient(135deg, #409eff, #337ecc);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 16px;
   color: #fff;
 }
 
 .value-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #1f2937;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .value-desc {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #6b7280;
   line-height: 1.7;
 }
 
 /* ==================== 行动号召区 ==================== */
 .cta-section {
-  padding: 80px 0;
+  padding: 60px 0;
   background: linear-gradient(135deg, #1e3a5f, #2d5f8a);
   color: #fff;
   text-align: center;
 }
 
 .cta-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .cta-subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   opacity: 0.85;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;

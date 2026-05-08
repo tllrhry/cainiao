@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
-          <router-link to="/" class="flex items-center gap-3" style="text-decoration:none">
+          <router-link to="/" class="flex items-center gap-2" style="text-decoration:none">
             <img src="/logo.jpg" alt="菜鸟设计" class="h-10 w-auto" />
             <span class="logo-text">菜鸟广告设计</span>
           </router-link>
